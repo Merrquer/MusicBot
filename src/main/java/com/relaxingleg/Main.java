@@ -12,7 +12,9 @@ import net.dv8tion.jda.api.JDABuilder;
 import javax.security.auth.login.LoginException;
 public class Main {
     public static void main(String[] args) throws LoginException {
+        //ENTER YOUR BOT TOKEN IN THE LINE BELOW
         JDA jda = JDABuilder.createDefault(Token.TOKEN).build();
+        //ENTER YOUR BOT TOKEN IN THE LINE ABOVE
         jda.addEventListener(new Listeners());
         CommandManager manager = new CommandManager();
         manager.add(new Play());
